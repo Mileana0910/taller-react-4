@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+//APP
+import ButtonClick from "./Componentes/ButtonClick";
+
+//APP1
+// import FormularioUsuario from "./Componentes/FormularioUsuario";
+
+//APP2
+// import React, { useState } from "react";
+// import Formulario from "./Componentes/Formulario";
+// import Resultado from "./Componentes/Resultado";
+// import styles from "./App.module.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ButtonClick />
     </div>
   );
 }
-
 export default App;
+
+// function App1() {
+//   return (
+//     <div>
+//       <FormularioUsuario />
+//     </div>
+//   );
+// }
+// export default App1;
+
+// function App2() {
+//   const [numero, setNumero] = useState("");
+
+//   const manejarCambioNumero = (nuevoNumero) => {
+//     setNumero(nuevoNumero);
+//   };
+
+//   return (
+//     <div className={styles.container}>
+//       <h1 className={styles.h1}>Ejercicio 3 Lifting State Up</h1>
+//       <Formulario onNumeroCambio={manejarCambioNumero} />
+//       <Resultado numero={numero} />
+//     </div>
+//   );
+// }
+// export default App2;
